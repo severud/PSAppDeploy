@@ -1,0 +1,42 @@
+<!-- Office 365 client configuration file sample. To be used for Office 365 ProPlus 2016 apps, 
+     Office 365 Business 2016 apps, Project Pro for Office 365 and Visio Pro for Office 365. 
+
+     For detailed information regarding configuration options visit: http://aka.ms/ODT. 
+     To use the configuration file be sure to remove the comments
+	 
+	 https://config.office.com/
+-->
+
+<Configuration>
+
+  <Add OfficeClientEdition="64" Channel="Monthly"  AllowCdnFallback="TRUE" ForceUpgrade="TRUE">
+  <Info Description="Office 365 ProPlus 64-bit for Shared Computers" />
+    <Product ID="O365ProPlusRetail">
+      <Language ID="en-us" />
+    </Product>
+    <Product ID="VisioProXVolume" PIDKEY="69WXN-MBYV6-22PQG-3WGHK-RM6XC">
+        <Language ID="en-us" />
+    </Product>
+	<Product ID="ProjectProXVolume" PIDKEY="WGT24-HCNMF-FQ7XH-6M8K7-DRTW9">
+        <Language ID="en-us" />
+    </Product>
+  </Add>
+
+  <Property Name="PinIconsToTaskbar" Value="FALSE" />
+  <Property Name="SCLCacheOverride" Value="0" />
+  <Updates Enabled="TRUE" />
+  <RemoveMSI All="TRUE" />
+
+  <AppSettings>
+    <Setup Name="Company" Value="Company - Department" />
+  </AppSettings>
+
+  <Updates Enabled="TRUE" Channel="Monthly" />
+  
+  <Property Name="SharedComputerLicensing" Value="1" />
+
+  <Display Level="None" AcceptEULA="TRUE" />
+
+  <Property Name="AUTOACTIVATE" Value="1" />
+
+</Configuration>
